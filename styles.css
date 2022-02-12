@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+  --background-color: #fffaf0;
+  --color: #4d4d4d;
+  --add-color: #00b2ee;
+  --letter-spacing: 0.005rem;
+  --line-hight: 1.375rem;
+  --main-margin: 0.5rem;
+}
+
+/*body*/
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-hight);
+  opacity: 1;
+  margin: var(--main-margin);
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #00b2ee;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  font-family: Brush Script MT, cursive;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #4d4d4d;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.fa-search {
+  margin-right: 0.5rem;
+}
+
+/*recommendation section*/
+
+.daily {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.recommendation {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.01rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.01rem;
+  line-height: 3rem;
+}
+
+.picture-of-the-day {
+  display: flex;
+}
+
+.picture-of-the-day img {
+  width: 50%;
+}
+
+/*Section 1 and 2*/
+
+.section1,
+.section2 {
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 0.05rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery div {
+  /* border: 5px solid red; */
+  flex-basis: 48%;
+}
+
+.gal-img {
+  width: 45%;
+  max-width: 350px;
+  min-width: 100px;
+  height: auto;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0.01rem;
+  margin-left: 1rem;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00b2ee73;
+  padding: 0.8rem;
+}
+
+.footer i {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+/*@media*/
+@media (max-width: 1200px) {
+  .recommendation {
+    width: 100%;
+  }
+  .picture-of-the-day {
+    flex-direction: column;
+  }
+  .picture-of-the-day img {
+    width: 100%;
+    order: 1;
+  }
+  .feijoada {
+    order: 2;
+  }
+  .gal-img {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
