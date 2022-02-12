@@ -39,6 +39,12 @@ header {
   z-index: 1;
 }
 
+
+header a {
+  color:inherit;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 3rem;
   letter-spacing: 0.01rem;
@@ -148,9 +154,13 @@ main.recipes {
 
 /* Recipes Section 1 (Intro) */
 
+.feature img {
+  max-width: 900px;
+}
 
 /* Recipes Section 2 (Ingredients - table) */
 table.greyGridTable {
+  overflow-x: auto;
   font-family: Verdana, Geneva, sans-serif;
   border: 1px solid #FFFFFF;
   width: 100%;
@@ -200,6 +210,7 @@ div.recipe-text {
 h4{
   font-size: 1.15rem;
   font-weight: 500;
+  padding-bottom: 0.5rem;
 }
 
 div.steps li {
