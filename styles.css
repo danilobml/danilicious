@@ -58,7 +58,7 @@ h1 {
   margin-right: 0.5rem;
 }
 
-/*recommendation section*/
+/* Landing p recommendation section*/
 
 .daily {
   max-width: 700px;
@@ -90,7 +90,12 @@ h3 {
   width: 50%;
 }
 
-/*Section 1 and 2*/
+a#dailyLink {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+/*Landing p Section 1 and 2*/
 
 .section1,
 .section2 {
@@ -110,7 +115,6 @@ h3 {
 }
 
 .gallery div {
-  /* border: 5px solid red; */
   flex-basis: 48%;
 }
 
@@ -126,6 +130,45 @@ h3 {
 h3 {
   margin-top: 0.01rem;
   margin-left: 1rem;
+}
+
+a.gal-link {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+/* Recipes Section 2*/
+
+main.recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.prep {
+  display: inherit;
+  flex-direction: column;
+  max-width: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+div.recipe-text {
+  width: 100%;
+  text-align: justify;
+  padding: 1rem;
+  font-size: 1.10 rem;
+}
+
+h4{
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+div.steps li {
+  padding: 0.7rem;
+  text-align: justify;
+
 }
 
 /*footer*/
