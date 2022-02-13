@@ -221,6 +221,7 @@ div.steps li {
 
 /*footer*/
 footer {
+  width:100%;
   display: flex;
   justify-content: space-around;
   background-color: #00b2ee73;
