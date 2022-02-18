@@ -14,7 +14,6 @@ html {
   --add-color: #00b2ee;
   --letter-spacing: 0.005rem;
   --line-hight: 1.375rem;
-  --main-margin: 0.5rem;
 }
 
 /*body*/
@@ -26,7 +25,6 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-hight);
   opacity: 1;
-  margin: var(--main-margin);
 }
 
 /*header*/
@@ -67,7 +65,7 @@ h1 {
   margin-right: 0.5rem;
 }
 
-/* Landing p recommendation section*/
+/* Landing page recommendation section*/
 
 .daily {
   max-width: 700px;
@@ -99,12 +97,12 @@ h3 {
   width: 50%;
 }
 
-a#dailyLink {
+a #dailyLink {
   color: #4d4d4d;
   text-decoration: none;
 }
 
-/*Landing p Section 1 and 2*/
+/*Landing page Section 1 and 2*/
 
 .section1,
 .section2 {
