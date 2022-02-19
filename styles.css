@@ -14,13 +14,14 @@ html {
   --add-color: #00b2ee;
   --letter-spacing: 0.005rem;
   --line-hight: 1.375rem;
+  --font-family: Helvetica, sans-serif;
 }
 
 /*body*/
 body {
   background-color: var(--background-color);
   color: var(--color);
-  font-family: Helvetica, sans-serif;
+  font-family: var(--font-family);
   text-align: left;
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-hight);
@@ -35,7 +36,7 @@ header {
   margin-bottom: 1rem;
   padding: 0.75em 0;
   background-color: var(--background-color);
-  border-bottom: 1.5px solid #00b2ee;
+  border-bottom: 1.5px solid var(--add-color);
   position: sticky; top: 0;
 }
 
@@ -60,6 +61,15 @@ h1 {
 .fa-search {
   margin-right: 0.5rem;
 }
+
+/*Feature header*/
+
+.feature-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  }
 
 /* Landing page recommendation section*/
 
@@ -87,8 +97,7 @@ h3 {
   font-size: 2rem;
   letter-spacing: 0.01rem;
   line-height: 3rem;
-  margin-top: 0.01rem;
-  margin-left: 1rem;
+  margin: 1rem 0rem;
 }
 
 .picture-of-the-day {
@@ -159,11 +168,12 @@ main.recipes {
 /* Recipes Section 2 (Ingredients table) */
 table.greyGridTable {
   overflow-x: auto;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: var(--font-family)
   border: 1px solid #FFFFFF;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
+  margin: 1.5rem 0rem;
 }
 table.greyGridTable td, table.greyGridTable th {
   padding: 3px 4px;
@@ -176,7 +186,7 @@ table.greyGridTable td:nth-child(even) {
 }
 table.greyGridTable thead {
   background: #FFFFFF;
-  border-bottom: 4px solid #333333;
+  border-bottom: 1.5px solid var(--add-color);
 }
 table.greyGridTable thead th {
   font-size: 15px;
@@ -214,7 +224,21 @@ h4{
 div.steps li {
   padding: 0.7rem;
   text-align: justify;
+}
 
+h5{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/*enjoy part*/
+.enjoy{
+  font-size: 2rem;
+  font-family: Brush Script MT, cursive;
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+  margin: 2rem 2rem;
 }
 
 /*footer*/
@@ -233,26 +257,31 @@ footer {
   padding-bottom: 0.5rem;
 }
 
-/*Feature header*/
-
-.feature-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  }
-
 /*Icon bar*/
 .icon-bar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
-
-.fas{
+.icon-bar i{
   display: flex;
   justify-content: center;
+  padding-bottom: 00.5rem;
+}
+
+/*Disables undeline at every link*/
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none
 }
 
 /*@media*/
@@ -273,5 +302,8 @@ footer {
   .gal-img {
     flex-wrap: wrap;
     align-items: center;
+  }
+  h1{
+    font-size: 2rem;
   }
 }
