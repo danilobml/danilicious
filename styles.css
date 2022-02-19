@@ -64,7 +64,7 @@ h1 {
 /* Landing page recommendation section*/
 
 .daily {
-  max-width: 900px;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -96,11 +96,12 @@ h3 {
 }
 
 .picture-of-the-day img {
-  width:100%;
-}
+  width: 50%;
+  }
 
 a#dailyLink {
-  color: var(--color);
+  color: #4d4d4d;
+
   text-decoration: none;
 }*
 
@@ -136,6 +137,10 @@ a#dailyLink {
   margin-bottom: 0;
 }
 
+h3 {
+  margin-top: 0.01rem;
+  /* margin-left: 1rem; */
+}
 a.gal-link {
   color: #4d4d4d;
   text-decoration: none;
@@ -259,19 +264,132 @@ footer {
 @media (max-width: 1200px) {
   .recommendation {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
+
   .picture-of-the-day {
     flex-direction: column;
   }
+
+  .middle {
+    display: none;
+  }
+  
   .picture-of-the-day img {
     width: 100%;
     order: 1;
   }
-  .feijoada {
+
+  .descrtext {
     order: 2;
   }
+
   .gal-img {
     flex-wrap: wrap;
     align-items: center;
   }
 }
+
+
+@media (min-width: 1200px) {
+
+  .daypic {
+    position: relative;
+  }
+
+  .picture-of-the-day img {
+    width: 75%;
+  }
+
+  .picture-of-the-day img {
+    position:relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: 2rem;
+  }
+
+  .gal-item, .imgs {
+    position:relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle, .middlel {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .middle {
+    top: 50%;
+    left: 43%;
+  }
+
+  .middlel {
+    top: 50%;
+    left: 50%;
+  }
+
+  section.daily {
+    width: 100%;
+  }
+  
+  .recommendation h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  p.descrtext {
+    margin: 1rem;
+    font-size: 1.3rem;  
+  }
+  
+  div.picture-of-the-day {
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 16px 32px;
+  }
+
+  .textl {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 16px 32px;
+  }
+
+  .picture-of-the-day img:hover, .gal-img:hover {
+    opacity: 0.3;
+  }
+  
+  .picture-of-the-day:hover .middle, .gal-link:hover .middlel {
+    opacity: 1;
+  }
+
+  .gal-link {
+    position: relative;
+  }
+
+  .gal-img {
+    width: 60%;
+    max-width: 350px;
+    min-width: 300px;
+  }
+
+  div.gallery h3{
+    font-size: 1.3rem;
+  }
