@@ -301,8 +301,12 @@ a:active{
     flex-direction: column;
   }
 
-  .middle {
+  .middle, .middlel {
     display: none;
+  }
+
+  .gallery h3 {
+    font-size: 1rem;
   }
   
   .picture-of-the-day img {
@@ -437,3 +441,4 @@ a:active{
   div.gallery h3{
     font-size: 1.3rem;
   }
+}
